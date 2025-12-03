@@ -97,17 +97,6 @@ securityContext:
     drop: ["ALL"]
 ```
 
-## Documentation Resources
-
-Essential links and resources for further information:
-
-- **Container Registry**: [https://www.cleanstart.com/](https://www.cleanstart.com/)
-- **Kyverno Documentation**: [https://kyverno.io/docs/](https://kyverno.io/docs/)
-
-- *
-
-###
-
 ## Resources
 
 - **Official Documentation:** https://kyverno.io/docs/
