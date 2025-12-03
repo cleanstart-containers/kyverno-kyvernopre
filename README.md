@@ -4,8 +4,8 @@ Kyverno Pre-validation webhook container that performs policy validation checks 
 
 📌 **Base Foundation**: Security-hardened, minimal base OS designed for enterprise containerized environments from cleanstart Registry.
 
-**Image Path**: `cleanstart/kyverno-kyvernopre`  
-**Registry**: cleanstart Registry
+- *Image Path**: `cleanstart/kyverno-kyvernopre`  
+- *Registry**: cleanstart Registry
 
 ## Key Features
 
@@ -104,17 +104,17 @@ Essential links and resources for further information:
 - **Container Registry**: [https://www.cleanstart.com/](https://www.cleanstart.com/)
 - **Kyverno Documentation**: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 
-**
-### 
-### Resources
+- *
 
-- Official Documentation: https://kyverno.io/docs/
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/kyverno-kyvernopre
-- Docker Hub: https://hub.docker.com/r/cleanstart/kyverno-kyvernopre
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
+###
 
----
+## Resources
+
+- **Official Documentation:** https://kyverno.io/docs/
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kyverno-kyvernopre
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/kyverno-kyvernopre
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
