@@ -104,19 +104,19 @@ Essential links and resources for further information:
 - **Container Registry**: [https://www.cleanstart.com/](https://www.cleanstart.com/)
 - **Kyverno Documentation**: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 
-**Reference:**
+**
+### Resources & Documentation  
+Essential links and resources for further information:
 
-CleanStart All Images: https://images.cleanstart.com
- 
-CleanStart Community Images: https://hub.docker.com/u/cleanstart
- 
-View Provenance, Specifications, SBOM, Signature at https://images.cleanstart.com/images/kyverno-kyvernopre
- 
-Other location for Community image: https://hub.docker.com/r/cleanstart/kyverno-kyvernopre
+- CleanStart Website: https://www.cleanstart.com
+- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/kyverno-kyvernopre
+- CleanStart All Images: https://images.cleanstart.com
+- CleanStart Community Images: https://hub.docker.com/u/cleanstart
+- Other location for Community image: https://hub.docker.com/r/cleanstart/kyverno-kyvernopre
 
 ---
 
-# Vulnerability Disclaimer
+### Vulnerability Disclaimer
 
 CleanStart offers Docker images that include third-party open-source libraries and packages maintained by independent contributors. While CleanStart maintains these images and applies industry-standard security practices, it cannot guarantee the security or integrity of upstream components beyond its control.
 
