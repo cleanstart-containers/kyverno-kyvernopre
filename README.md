@@ -4,7 +4,7 @@ Kyverno Pre-validation webhook container that performs policy validation checks 
 
 📌 **Base Foundation**: Security-hardened, minimal base OS designed for enterprise containerized environments from cleanstart Registry.
 
-- *Image Path**: `cleanstart/kyverno-kyvernopre`  
+- *Image Path**: `ghcr.io/cleanstart-containers/kyverno-kyvernopre`  
 - *Registry**: cleanstart Registry
 
 ## Key Features
@@ -30,11 +30,11 @@ Typical scenarios where this container excels:
 Download the container image from the registry:
 
 ```bash
-docker pull cleanstart/kyverno-kyvernopre:latest
+docker pull ghcr.io/cleanstart-containers/kyverno-kyvernopre:latest
 ```
 
 ```bash
-docker pull cleanstart/kyverno-kyvernopre:latest-dev
+docker pull ghcr.io/cleanstart-containers/kyverno-kyvernopre:latest-dev
 ```
 
 ## Basic Run
@@ -44,7 +44,7 @@ Run the container with basic configuration:
 ```bash
 docker run -it --name kyverno-pre \
   -e KYVERNO_NAMESPACE=kyverno \
-  cleanstart/kyverno-kyvernopre:latest
+  ghcr.io/cleanstart-containers/kyverno-kyvernopre:latest
 ```
 
 ## Production Deployment
@@ -57,7 +57,7 @@ docker run -d --name kyverno-pre-prod \
   --security-opt=no-new-privileges \
   --user 1000:1000 \
   -e KYVERNO_NAMESPACE=kyverno \
-  cleanstart/kyverno-kyvernopre:latest
+  ghcr.io/cleanstart-containers/kyverno-kyvernopre:latest
 ```
 
 ## Environment Variables
