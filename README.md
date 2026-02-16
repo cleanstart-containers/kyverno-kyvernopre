@@ -102,7 +102,7 @@ securityContext:
 - **Official Documentation:** https://kyverno.io/docs/
 - **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/kyverno-kyvernopre
 - **Docker Hub:** https://hub.docker.com/r/cleanstart/kyverno-kyvernopre
-- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart All Images:** https://images.cleanstart.com/images/kyverno-kyvernopre/details
 - **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
