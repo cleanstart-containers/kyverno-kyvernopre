@@ -21,7 +21,20 @@ docker run --rm --name kyverno-test \
   cleanstart/kyverno-kyvernopre:latest --help
 ```
 
-### Step 3: Run Production Container
+### Step 3: Run Production Container (requires Kubernetes API access)
+
+Kyverno needs a Kubernetes API server. It first tries **in-cluster** config (`KUBERNETES_SERVICE_HOST` / `KUBERNETES_SERVICE_PORT`). When you run the container with plain `docker run` (not inside a cluster), those are not set and you get:
+
+```text
+failed to create rest client configuration error="unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined"
+```
+
+**Option A – Run inside a Kubernetes cluster (recommended)**  
+Use the manifests under `../kubernetes - GKE/` (namespace, service account, deployment, service) and deploy to your cluster so the container runs as a pod. Then it gets in-cluster config automatically.
+
+**Option B – Run with Docker using a kubeconfig**  
+Mount a kubeconfig that can reach your cluster (Kind, Minikube, or remote) and set `KUBECONFIG`:
+
 ```bash
 docker run -d --name kyverno-prod \
   -e KYVERNO_NAMESPACE=kyverno \
@@ -30,8 +43,14 @@ docker run -d --name kyverno-prod \
   -e KYVERNO_POD_NAME=kyverno-pre \
   -e INIT_CONFIG='{"config":{}}' \
   -e METRICS_CONFIG='{"enabled":false}' \
+  -e KUBECONFIG=/app/.kube/config \
+  -v "$HOME/.kube/config:/app/.kube/config:ro" \
   cleanstart/kyverno-kyvernopre:latest
 ```
+
+Adjust the mount path if your kubeconfig lives elsewhere (e.g. Minikube/Kind often use `~/.kube/config`). The container must be able to reach the API server (use the same kubeconfig you use with `kubectl`).
+
+**Summary:** Step 3 only works when the container can reach a Kubernetes API server—either by running as a pod (Option A) or by using a mounted kubeconfig (Option B).
 
 ### Step 4: Check Container Status
 ```bash
