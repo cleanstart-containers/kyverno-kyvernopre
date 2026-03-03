@@ -10,6 +10,7 @@ kubectl apply -f namespace.yaml
 kubectl apply -f serviceaccount.yaml
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
+kubectl apply -f rbac.yaml
 ```
 
 ## ✅ Check Status
@@ -28,6 +29,7 @@ kubectl logs -n kyverno deployment/kyverno
 kubectl delete -f service.yaml
 kubectl delete -f deployment.yaml
 kubectl delete -f serviceaccount.yaml
+kubectl delete -f rbac.yaml
 kubectl delete -f namespace.yaml
 ```
 
