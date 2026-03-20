@@ -31,6 +31,6 @@ spec:
             fieldRef:
               fieldPath: metadata.name
         - name: INIT_CONFIG
-          value: '{"config":{}}'
+          value: "kyverno"         
         - name: METRICS_CONFIG
-          value: '{"enabled":true}'
+          value: "kyverno-metrics"  
